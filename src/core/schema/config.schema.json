@@ -18,6 +18,11 @@
       "title": "Enabled extensions",
       "default": {}
     },
+    "_enabledPlugins": {
+      "type": "array",
+      "title": "Enabled plugins",
+      "default": []
+    },
     "_theme": {
       "type": "string",
       "title": "Theme",
