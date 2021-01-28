@@ -22,8 +22,8 @@
         },
         "pageBody": {
           "type": "string",
-          "title": "Page body",
-          "description": "If set, this text will be shown instead of the body text when this page is viewed.",
+          "title": "Custom page body",
+          "description": "If set, this text will be shown instead of the body text when this page is viewed",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -32,8 +32,8 @@
         },
         "_htmlClasses": {
           "type": "string",
-          "title": "HTML Classes",
-          "description": "If set, this CSS class/es will be applied to the <html> element whenever this is the active page in the course. These are predefined in the theme or added in Project Settings > Custom CSS/Less code.",
+          "title": "Custom HTML classes",
+          "description": "If set, this CSS class/es will be applied to the <html> element whenever this is the active page in the course. These are predefined in the theme or added in Project Settings > Custom CSS/Less code",
           "default": ""
         },
         "_graphic": {
@@ -44,7 +44,7 @@
             "alt": {
               "type": "string",
               "title": "Alternative text",
-              "description": "This is the alternative text that is displayed when the image is not visible. This is also used by screen readers.",
+              "description": "This is the alternative text that is displayed when the image is not visible. This is also used by screen readers",
               "default": "",
               "_adapt": {
                 "translatable": true
@@ -52,8 +52,7 @@
             },
             "src": {
               "type": "string",
-              "title": "Src",
-              "description": "This is the link to the image.",
+              "title": "Source",
               "default": "",
               "_backboneForms": {
                 "type": "Asset",
@@ -64,7 +63,7 @@
         },
         "linkText": {
           "type": "string",
-          "title": "Button link text",
+          "title": "Menu button text",
           "default": "View",
           "_adapt": {
             "translatable": true
@@ -81,15 +80,15 @@
         },
         "_lockedBy": {
           "type": "array",
-          "title": "Locked by",
-          "description": "If the course is using a 'custom' Menu Lock Type, this should contain the unique ID of the item(s) which must be completed before this is unlocked",
+          "title": "Elements to complete before this is unlocked",
+          "description": "If the course is using a 'custom' menu lock type, this should contain the unique ID of the item(s) which must be completed before this is unlocked",
           "default": [],
           "_backboneForms": "List"
         },
         "_lockType": {
           "type": "string",
           "title": "Menu lock type",
-          "description": "Defines which (if any) locking mechanism will be used. To be used only on submenus.",
+          "description": "Defines which (if any) locking mechanism will be used. To be used only on submenus",
           "default": "",
           "enum": [
             "",
@@ -102,8 +101,8 @@
         },
         "_requireCompletionOf": {
           "type": "number",
-          "title": "Require completion of",
-          "description": "The number of articles within this page the learner must complete in order for this page to be set as completed. A value of -1 requires all of them to be completed.",
+          "title": "Number of articles required for completion",
+          "description": "The number of articles within this page the learner must complete in order for this page to be set as completed. A value of -1 requires all of them to be completed",
           "default": -1,
           "_adapt": {
             "isSetting": true

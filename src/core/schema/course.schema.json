@@ -33,7 +33,7 @@
         "description": {
           "type": "string",
           "title": "Description",
-          "description": "This will be added to the course's manifest file metadata. It is not (currently) displayed anywhere within the course.",
+          "description": "This will be added to the course's manifest file metadata. It is not (currently) displayed anywhere within the course",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -41,8 +41,8 @@
         },
         "_htmlClasses": {
           "type": "string",
-          "title": "HTML Classes",
-          "description": "If set, this class will be applied to the <html> element when the top-level menu in the course is displayed. These are predefined in the theme or added in Custom CSS/Less code.",
+          "title": "Custom HTML classes",
+          "description": "If set, this class will be applied to the <html> element when the top-level menu in the course is displayed. These are predefined in the theme or added in Custom CSS/Less code",
           "default": ""
         },
         "_latestTrackingId": {
@@ -53,12 +53,12 @@
         "_start": {
           "type": "object",
           "title": "Start settings",
-          "description": "The start settings allow you to control which page is rendered when a course loads, potentially bypassing the menu.",
+          "description": "The start settings allow you to control which page is rendered when a course loads, potentially bypassing the menu",
           "default": {},
           "properties": {
             "_isEnabled": {
               "type": "boolean",
-              "title": "Enabled?",
+              "title": "Route to custom start page on course load",
               "default": false,
               "_adapt": {
                 "editorOnly": true
@@ -66,7 +66,7 @@
             },
             "_startIds": {
               "type": "array",
-              "title": "Start List",
+              "title": "Start pages",
               "items": {
                 "type": "object",
                 "properties": {
@@ -76,7 +76,7 @@
                   },
                   "_skipIfComplete": {
                     "type": "boolean",
-                    "title": "Skip if complete?",
+                    "title": "Skip page if complete",
                     "description": "If enabled, the page will not be selected as the first page if it has been already viewed/completed",
                     "default": false,
                     "_adapt": {
@@ -85,7 +85,7 @@
                   },
                   "_className": {
                     "type": "string",
-                    "title": "Classes",
+                    "title": "Limit to classes",
                     "description": "Optional comma-separated list of class names which will be used to select this start page",
                     "default": ""
                   }
@@ -94,7 +94,7 @@
             },
             "_force": {
               "type": "boolean",
-              "title": "Force routing",
+              "title": "Always route to start page",
               "description": "If enabled, the routing will be forced to the appropriate start page, regardless of the URL",
               "default": false,
               "_adapt": {
@@ -172,8 +172,8 @@
                     },
                     "skipNavigation": {
                       "type": "string",
-                      "title": "Skip Navigation",
-                      "default": "Skip Navigation",
+                      "title": "Skip navigation",
+                      "default": "Skip navigation",
                       "_adapt": {
                         "translatable": true
                       }
@@ -493,8 +493,8 @@
         },
         "_requireCompletionOf": {
           "type": "number",
-          "title": "Require completion of",
-          "description": "The number of content objects within this course the learner must complete in order for this course to be set as completed. A value of -1 requires all of them to be completed.",
+          "title": "Number of pages/submenus required for completion",
+          "description": "The number of content objects within this course the learner must complete in order for this course to be set as completed. A value of -1 requires all of them to be completed",
           "default": -1,
           "_adapt": {
             "isSetting": true
@@ -561,8 +561,8 @@
         },
         "customStyle": {
           "type": "string",
-          "title": "Custom CSS/LESS code",
-          "description": "Add any custom CSS or valid LESS code here",
+          "title": "Custom CSS/Less code",
+          "description": "Add any custom CSS or valid Less code here",
           "default": "",
           "_backboneForms": {
             "type": "CodeEditor",
