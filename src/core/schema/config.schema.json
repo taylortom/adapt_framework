@@ -57,7 +57,7 @@
     },
     "_defaultLanguage": {
       "type": "string",
-      "title": "Default language",
+      "title": "Default language code",
       "default": "en"
     },
     "_defaultDirection": {
