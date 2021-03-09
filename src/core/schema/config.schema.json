@@ -8,6 +8,11 @@
     "_questionWeight"
   ],
   "properties": {
+    "_type": {
+      "type": "string",
+      "title": "Type",
+      "default": "config"
+    },
     "_extensions": {
       "type": "object",
       "title": "Extensions",
