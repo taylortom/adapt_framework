@@ -10,8 +10,7 @@
       "properties": {
         "_component": {
           "type": "string",
-          "title": "Component",
-          "default": ""
+          "title": "Component"
         },
         "_layout": {
           "type": "string",
@@ -55,7 +54,8 @@
             "editorOnly": true
           }
         }
-      }
+      },
+      "required": ["_component"]
     }
   }
 }
