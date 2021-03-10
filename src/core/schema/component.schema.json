@@ -8,17 +8,6 @@
     },
     "with": {
       "properties": {
-        "_componentType": {
-          "type": "string",
-          "isObjectId": true,
-          "title": "Component type",
-          "_adapt": {
-            "editorOnly": true
-          },
-          "_unrecognisedFields": {
-            "ref": "componenttype"
-          }
-        },
         "_component": {
           "type": "string",
           "title": "Component",
