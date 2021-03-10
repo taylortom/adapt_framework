@@ -30,7 +30,7 @@
     "title": {
       "type": "string",
       "title": "Title",
-      "default": "New Title",
+      "default": "Untitled",
       "_adapt": {
         "translatable": true
       }
@@ -56,7 +56,7 @@
     },
     "instruction": {
       "type": "string",
-      "title": "Instruction text",
+      "title": "Instruction",
       "default": "",
       "_adapt": {
         "translatable": true
@@ -64,8 +64,8 @@
     },
     "_classes": {
       "type": "string",
-      "title": "Classes",
-      "description": "Used to style or manipulate the look and feel of this element. These are predefined in the theme or added in Project Settings > Custom CSS/Less code.",
+      "title": "Custom classes",
+      "description": "Used to style or manipulate the look and feel of this element. These are predefined in the theme or added in Project Settings > Custom CSS/Less code",
       "default": "",
       "_adapt": {
         "isSetting": true
@@ -73,8 +73,8 @@
     },
     "_isOptional": {
       "type": "boolean",
-      "title": "Is this optional?",
-      "description": "An optional element does not have to be completed, nor do any of the elements contained within it.",
+      "title": "Make this element optional",
+      "description": "An optional element does not have to be completed, nor do any of the elements contained within it",
       "default": false,
       "_adapt": {
         "isSetting": true
@@ -82,8 +82,8 @@
     },
     "_isAvailable": {
       "type": "boolean",
-      "title": "Is this available?",
-      "description": "Controls whether this element and its contents are available in the course or not.",
+      "title": "Make this element available",
+      "description": "Controls whether this element and its contents are available in the course or not",
       "default": true,
       "_adapt": {
         "isSetting": true
@@ -91,8 +91,8 @@
     },
     "_isHidden": {
       "type": "boolean",
-      "title": "Is this hidden?",
-      "description": "Enabling this is equivalent to applying the CSS 'display:none' to the element.",
+      "title": "Hide this element",
+      "description": "Enabling this is equivalent to applying the CSS 'display:none' to the element",
       "default": false,
       "_adapt": {
         "isSetting": true
@@ -100,8 +100,8 @@
     },
     "_isVisible": {
       "type": "boolean",
-      "title": "Is this visible?",
-      "description": "Disabling this is equivalent to applying the CSS 'visibility:hidden' to the element.",
+      "title": "Make this element visible",
+      "description": "Disabling this is equivalent to applying the CSS 'visibility:hidden' to the element",
       "default": true,
       "_adapt": {
         "isSetting": true
@@ -109,8 +109,8 @@
     },
     "_ariaLevel": {
       "type": "number",
-      "title": "Aria level",
-      "description": "If you need to override the default element ARIA level (as defined in Configuration Settings), set this to any number greater than 0.",
+      "title": "Custom ARIA level",
+      "description": "If you need to override the default element ARIA level (as defined in Configuration Settings), set this to any number greater than 0",
       "default": 0,
       "_adapt": {
         "isSetting": true
@@ -118,13 +118,13 @@
     },
     "_onScreen": {
       "type": "object",
-      "title": "On-screen classes",
-      "description": "These settings allow you to attach classes to the element when it is within the browser's viewport; helpful for running CSS-based animations on elements as they scroll into view.",
+      "title": "Animation classes",
+      "description": "These settings allow you to attach classes to the element when it is within the browser's viewport; helpful for running CSS-based animations on elements as they scroll into view",
       "default": {},
       "properties": {
         "_isEnabled": {
           "type": "boolean",
-          "title": "Enabled?",
+          "title": "Add classes when this element is in view",
           "default": false,
           "_adapt": {
             "isSetting": true
@@ -133,7 +133,7 @@
         "_classes": {
           "type": "string",
           "title": "Classes",
-          "description": "The CSS class(es) to add to the element.",
+          "description": "The CSS class(es) to add to the element",
           "default": "",
           "_adapt": {
             "isSetting": true
@@ -142,7 +142,7 @@
         "_percentInviewVertical": {
           "type": "number",
           "title": "Percent in view",
-          "description": "Controls what percentage of the element's height needs to be in the viewport in order for the CSS class(es) to be added.",
+          "description": "Controls what percentage of the element's height needs to be in the viewport in order for the CSS class(es) to be added",
           "default": 50,
           "_adapt": {
             "isSetting": true

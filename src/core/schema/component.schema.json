@@ -19,8 +19,8 @@
         },
         "_isResetOnRevisit": {
           "type": "string",
-          "title": "Reset when revisited?",
-          "description": "Controls whether this component will be reset when the learner leaves the page then returns to it. The 'soft' setting will reset the component to allow the learner to attempt it again, but will not require them to do so; whereas the 'hard' setting will require them to do so. The default (false) will not cause the component to be reset.",
+          "title": "Reset state on revisit",
+          "description": "Controls whether this component will be reset when the learner leaves the page then returns to it. The 'soft' setting will reset the component to allow the learner to attempt it again, but will not require them to do so; whereas the 'hard' setting will require them to do so. The default (false) will not cause the component to be reset",
           "default": "false",
           "enum": [
             "false",
@@ -34,7 +34,7 @@
         },
         "_disableAccessibilityState": {
           "type": "boolean",
-          "title": "Is the accessibility state disabled?",
+          "title": "Disable completion ARIA label",
           "description": "Controls whether the user can tab to a hidden label that describes the completion state of the component",
           "default": false,
           "_adapt": {

@@ -23,8 +23,8 @@
         },
         "_requireCompletionOf": {
           "type": "number",
-          "title": "Require completion of",
-          "description": "The number of components within this block the learner must complete in order for this block to be set as completed. A value of -1 requires all of them to be completed.",
+          "title": "Number of components required for completion",
+          "description": "The number of components within this block the learner must complete in order for this block to be set as completed. A value of -1 requires all of them to be completed",
           "default": -1,
           "_adapt": {
             "isSetting": true
